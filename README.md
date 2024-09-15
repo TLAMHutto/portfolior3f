@@ -1,5 +1,5 @@
 
-https://tlamhutto.github.io/portfolior3f/
+https://portfolior3f.vercel.app/
 
 Previous portfolios:
 
