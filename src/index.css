@@ -6,7 +6,7 @@
 #root {
   width: 100vw;
   height: 100vh;
-  background: radial-gradient(#3d3d3d, #000000 80%);
+  background: radial-gradient(#ff0000b6, #000000 90%);
 }
 
 body {
@@ -16,3 +16,63 @@ body {
 .outline-text {
   -webkit-text-stroke: 1px white;
 }
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.icons-container {
+  position: absolute;
+  top: 20px; /* Adjust top and left to position the icons */
+  right: calc(100vw - 50px);
+  z-index: 1; /* Ensure icons are above the canvas */
+}
+
+/* Style for individual icons */
+.icons-container a {
+  margin: 0 10px;
+  font-size: 2rem;
+  color: #fff; /* White icons */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+/* Hover effect */
+.icons-container a:hover {
+  color: #0077b5; /* Change color on hover */
+}
+  
+.container {
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom:0px;
+  width: 120%;
+  pointer-events: none;
+  
+  }
+  
+  .fog {
+  opacity: 100%;
+  min-width: 2000px;
+  position: relative;
+  animation-name: fog;
+  animation-duration: 8s; 
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear
+  }
+  
+  @keyframes fog {
+      from {right: 0px;}
+      to {right: 50px; }
+    }
